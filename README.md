@@ -6,11 +6,11 @@ Useful for debugging and testing.
 
 # Usage
 
-```
+```bash
 pip install -r requirements.txt
 # optional set OPENAI_BASE_URL to the server you want to proxy requests to
 export OPENAI_BASE_URL=https://api.openai.com
-uvicorn main:app --reload
+uvicorn app:app --reload
 ```
 
 Requests that are sent to the proxy will be displayed in the web interface at http://localhost:8000 and can be modified manually before being returned to the client.
